@@ -2,7 +2,7 @@
 
     CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
 
-    PSet1: Greedy
+    PSet1: Cash ("greedy algorithm")
 
     @author: Andrey Tymofeiuk
 
