@@ -30,5 +30,6 @@ int main(void)
     float ounces = gallons * 128;
     int bottles = round(ounces / 16) ;
 
+    // Andrey Tymofeiuk: Printing the result
     printf("Bottles: %d\n", bottles);
 }

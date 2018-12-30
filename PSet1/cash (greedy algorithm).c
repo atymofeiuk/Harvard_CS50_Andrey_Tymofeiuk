@@ -19,6 +19,7 @@
 #include <cs50.h>
 #include <math.h>
 
+// Andrey Tymofeiuk: Creationg of necessary variables
 float dollars_left;
 int cents_left;
 int quarter = 25; int dime = 10; int nickel = 5; int pennie = 1;
