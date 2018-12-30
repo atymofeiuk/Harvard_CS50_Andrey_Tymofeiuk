@@ -21,6 +21,8 @@
 int main(void)
 {
     int len = 0;
+    
+    // Andrey Tymofeiuk: Check for the correct input
     do
     {
         len = get_int("Height: ");
