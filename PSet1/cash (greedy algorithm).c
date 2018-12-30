@@ -64,7 +64,7 @@ int main(void)
         p_count++;
     }
 
-    // Andrey Tymofeiuk: Summary number of coin
+    // Andrey Tymofeiuk: Summary number of coins
     total_count = q_count + d_count + n_count + p_count;
 
     printf("%i\n", total_count);

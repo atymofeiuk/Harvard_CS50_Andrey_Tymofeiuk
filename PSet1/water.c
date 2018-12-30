@@ -28,7 +28,7 @@ int main(void)
     // Andrey Tymofeiuk: Calculations
     float gallons = minutes * 1.5;
     float ounces = gallons * 128;
-    int bottles = round(ounces/16) ;
+    int bottles = round(ounces / 16) ;
 
     printf("Bottles: %d\n", bottles);
 }
