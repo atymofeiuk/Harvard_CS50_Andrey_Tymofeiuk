@@ -29,6 +29,7 @@ int main(void)
     }
     while ((len < 0) || (len > 23));
 
+    // Andrey Tymofeiuk: Main loop
     for (int i = 1; i < len + 1; i++)
     {
         for (int j = 0; j < len - i; j++)
