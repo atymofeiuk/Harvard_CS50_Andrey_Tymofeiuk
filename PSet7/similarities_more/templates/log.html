@@ -1,0 +1,40 @@
+<!--
+
+    CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
+
+    PSet6: Similarities (for "more comfortable")
+
+    NB: PSet6/Similarities files with Andrey Tymofeiuk's code are helpers.py, matrix.html and index.html,
+    other additional files contain distribution code provided by Harvard CS50 staff
+
+    @author: Andrey Tymofeiuk
+
+    Important: This code is placed at GitHub to track my progress in programming and
+    to show my way of thinking. Also I will be happy if somebody finds my solution
+    interesting. But I do respect The Honor Code and I ask you to respect it also - please
+    don't submit this solution to the CS50 grader and do not copy it.
+
+    (c) 2018
+
+-->
+
+<table class="table table-sm">
+    <tbody>
+        {% for s, operation, description in operations %}
+            <tr>
+                <th>
+                    {% if operation == None %}
+                        {{ s | safe }}
+                    {% else %}
+                        {{ s[0] }}<span class="{{ operation }}">{{ s[1] }}</span>{{ s[2] }}
+                        {% if description != None %}
+                            <span class="badge {{ operation }} text-dark">
+                                {{ description }}
+                            </span>
+                        {% endif %}
+                    {% endif %}
+                </th>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
