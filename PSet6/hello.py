@@ -2,7 +2,7 @@
 
     CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
 
-    PSet6: Mario (for "more comfortable")
+    PSet6: Hello
 
     @author: Andrey Tymofeiuk
 
@@ -11,19 +11,11 @@
     interesting. But I do respect The Honor Code and I ask you to respect it also - please
     don't submit this solution to the CS50 grader and do not copy it.
 
-    (c) 2018
+    (c) 2019
 
 '''
 
-from cs50 import get_int
+from cs50 import get_string
 
-h = -1
-while (h < 0 or h > 23):
-    h = get_int("Height: ")
-
-for i in range(h):
-    print((h - i - 1) * " ",  end='')
-    print((i + 1) * "#", end='')
-    print("  ", end='')
-    print((i + 1) * "#", end='')
-    print()
+s = get_string("What is your name? ")
+print(f"hello, {s}")

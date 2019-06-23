@@ -11,16 +11,22 @@
     interesting. But I do respect The Honor Code and I ask you to respect it also - please
     don't submit this solution to the CS50 grader and do not copy it.
 
-    (c) 2018
+    (c) 2019
 
 '''
 
 from cs50 import get_int
 
-h = -1
-while (h < 0 or h > 23):
+h = 0
+while h < 1 or h > 23:
     h = get_int("Height: ")
 
 for i in range(1, h + 1):
-    print(' ' * (h - i), end='')
-    print("#" * (i + 1))
+
+    for j in range(h - i):
+        print(" ", end='')
+
+    for l in range(i - 1):
+        print("#", end='')
+
+    print("#")
