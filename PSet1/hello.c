@@ -11,9 +11,7 @@
     interesting. But I do respect The Honor Code and I ask you to respect it also - please
     don't submit this solution to the CS50 grader and do not copy it.
 
-    (c) 2017&2019
-
-**/
+    (c) 2017**/
 
 #include <stdio.h>
 

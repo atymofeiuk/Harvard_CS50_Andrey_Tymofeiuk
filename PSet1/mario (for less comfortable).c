@@ -2,7 +2,7 @@
 
     CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
 
-    PSet1: Mario (less comfortable)
+    PSet1: Mario (for "less comfortable")
 
     @author: Andrey Tymofeiuk
 
