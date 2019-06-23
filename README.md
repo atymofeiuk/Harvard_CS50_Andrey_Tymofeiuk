@@ -8,4 +8,6 @@ to show my way of thinking. Also I will be happy if somebody will find my soluti
 interesting. But I respect The Honor Code and I ask you to respect it also - please
 don't use these solutions to pass the Harvard CS50 course.
 
-(c) 2017-2019
+(c) 2017-2019 
+
+// Andrey Tymofeiuk: for PSets 4-8 if the year is not stated, it means that the code was written in 2019
