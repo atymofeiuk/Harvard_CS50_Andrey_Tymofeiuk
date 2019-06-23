@@ -1,0 +1,28 @@
+<!--
+    CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
+
+    PSet8: Finance
+
+    NB: PSet8/Finance files with Andrey Tymofeiuk's code are application.py, finance.db and aall of the html
+    templates except of layout.html, other additional files contain distribution code provided by Harvard CS50 staff.
+
+    @author: Andrey Tymofeiuk
+
+    Important: This code is placed at GitHub to track my progress in programming and
+    to show my way of thinking. Also I will be happy if somebody finds my solution
+    interesting. But I do respect The Honor Code and I ask you to respect it also - please
+    don't submit this solution to the CS50 grader and do not copy it.
+
+    (c) 2018
+
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <img alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.imgur.com/CsCgN7Ll.png"/>
+{% endblock %}

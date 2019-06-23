@@ -1,0 +1,56 @@
+<!--
+    CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
+
+    PSet8: Finance
+
+    NB: PSet8/Finance files with Andrey Tymofeiuk's code are application.py, finance.db and aall of the html
+    templates except of layout.html, other additional files contain distribution code provided by Harvard CS50 staff.
+
+    @author: Andrey Tymofeiuk
+
+    Important: This code is placed at GitHub to track my progress in programming and
+    to show my way of thinking. Also I will be happy if somebody finds my solution
+    interesting. But I do respect The Honor Code and I ask you to respect it also - please
+    don't submit this solution to the CS50 grader and do not copy it.
+
+    (c) 2018
+
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+Greetings, {{ name }}!<br><br>
+Available money: {{ money }}<br><br>
+Your portfolio:  <br><br>
+
+<table border = "1" align="center">
+
+    <tr>
+        <td>Stock</td>
+        <td>Shares quantity</td>
+        <td>Price of a share</td>
+        <td>Market value of all shares of this stock</td>
+
+    </tr>
+
+{% for stock in stock_portfolio %}
+<TR>
+
+   <td class="c1">{{ stock['name_stock'] }}</td>
+   <td>{{ stock['shares_quantity'] }}</td>
+   <td>${{ stock['current_price'] }}</td>
+   <td>${{ stock['market_value'] }}</td>
+
+</TR>
+{% endfor %}
+</table>
+<br>
+Total value of your all assets: {{ total_value }}
+
+{% endblock %}

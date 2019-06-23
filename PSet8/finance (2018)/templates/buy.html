@@ -1,0 +1,38 @@
+<!--
+    CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
+
+    PSet8: Finance
+
+    NB: PSet8/Finance files with Andrey Tymofeiuk's code are application.py, finance.db and aall of the html
+    templates except of layout.html, other additional files contain distribution code provided by Harvard CS50 staff.
+
+    @author: Andrey Tymofeiuk
+
+    Important: This code is placed at GitHub to track my progress in programming and
+    to show my way of thinking. Also I will be happy if somebody finds my solution
+    interesting. But I do respect The Honor Code and I ask you to respect it also - please
+    don't submit this solution to the CS50 grader and do not copy it.
+
+    (c) 2018
+
+-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+
+    <form action="/buy" method="post">
+        <div class="form-group">
+            <input class="form-control" name="symbol" placeholder="Stock code" type="text"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="shares" placeholder="Number of shares" type="text"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
+    </form>
+
+{% endblock %}
