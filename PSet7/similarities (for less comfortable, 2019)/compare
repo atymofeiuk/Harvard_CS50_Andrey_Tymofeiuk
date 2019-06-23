@@ -1,10 +1,9 @@
 '''
-
     CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
 
-    PSet6: Similarities (for "less comfortable")
+    PSet7: Similarities
 
-    NB: PSet6/Similarities files with Andrey Tymofeiuk's code are helpers.py and index.html,
+    NB: PSet7/Similarities files with Andrey Tymofeiuk's code are helpers.py and index.html,
     other additional files contain distribution code provided by Harvard CS50 staff
 
     @author: Andrey Tymofeiuk
@@ -14,7 +13,7 @@
     interesting. But I do respect The Honor Code and I ask you to respect it also - please
     don't submit this solution to the CS50 grader and do not copy it.
 
-    (c) 2018
+    (c) 2019
 
 '''
 

@@ -1,0 +1,63 @@
+<!--
+
+    CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
+
+    PSet7: Survey
+
+    NB: PSet7/Survey files with Andrey Tymofeiuk's code are application.py, form.html and sheet.html,
+    other additional files contain distribution code provided by Harvard CS50 staff
+
+    @author: Andrey Tymofeiuk
+
+    Important: This code is placed at GitHub to track my progress in programming and
+    to show my way of thinking. Also I will be happy if somebody finds my solution
+    interesting. But I do respect The Honor Code and I ask you to respect it also - please
+    don't submit this solution to the CS50 grader and do not copy it.
+
+    (c) 2019
+
+-->
+
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+
+    <!-- Andrey Tymofeiuk: Written by me-->
+    <h1 class="mb-3">Sheet</h1>
+
+    <form action="/form" method="post">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>House</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+
+    {% for student in students %}
+        <tr>
+            <td>{{student[0]}}</td>
+            <td>{{student[1]}}</td>
+            <td>{{student[2]}}</td>
+        </tr>
+    {% endfor %}
+
+        </tbody>
+    </table>
+
+    <!-- Andrey Tymofeiuk: Staff solution's scripts (CS50 students were encouraged to investigate)-->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+
+        $('table')['DataTable']({'info':![],'ordering':!![],'paging':![],'searching':![]});
+
+    </script>
+
+
+{% endblock %}

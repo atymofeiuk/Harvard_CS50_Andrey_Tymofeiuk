@@ -2,9 +2,9 @@
 
     CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
 
-    PSet6: Similarities (for "less comfortable")
+    PSet7: Survey
 
-    NB: PSet6/Similarities files with Andrey Tymofeiuk's code are helpers.py and index.html,
+    NB: PSet7/Survey files with Andrey Tymofeiuk's code are application.py, form.html and sheet.html,
     other additional files contain distribution code provided by Harvard CS50 staff
 
     @author: Andrey Tymofeiuk
@@ -14,22 +14,18 @@
     interesting. But I do respect The Honor Code and I ask you to respect it also - please
     don't submit this solution to the CS50 grader and do not copy it.
 
-    (c) 2018
+    (c) 2019
 
 -->
 
 {% extends "layout.html" %}
 
-{% block body %}
+{% block main %}
 
-    <!-- lefthand column -->
-    <div class="col-6">
-        <pre>{{ file1 | safe }}</pre>
-    </div>
-
-    <!-- righthand column -->
-    <div class="col-6">
-        <pre>{{ file2 | safe }}</pre>
+    <!-- http://getbootstrap.com/docs/4.1/components/alerts/ -->
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Error</h4>
+        <p>{{ message }}</p>
     </div>
 
 {% endblock %}

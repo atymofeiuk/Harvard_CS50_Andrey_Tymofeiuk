@@ -1,10 +1,9 @@
 '''
-
     CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
 
-    PSet6: Similarities (for "less comfortable")
+    PSet7: Similarities (for "less comfortable")
 
-    NB: PSet6/Similarities files with Andrey Tymofeiuk's code are helpers.py and index.html,
+    NB: PSet7/Similarities files with Andrey Tymofeiuk's code are helpers.py and index.html,
     other additional files contain distribution code provided by Harvard CS50 staff
 
     @author: Andrey Tymofeiuk
@@ -14,7 +13,7 @@
     interesting. But I do respect The Honor Code and I ask you to respect it also - please
     don't submit this solution to the CS50 grader and do not copy it.
 
-    (c) 2018
+    (c) 2019
 
 '''
 
@@ -26,8 +25,11 @@ from werkzeug.exceptions import default_exceptions, HTTPException
 
 from helpers import lines, sentences, substrings
 
-# Web app
+# Configure application
 app = Flask(__name__)
+
+# Reload templates when they are changed
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 @app.after_request

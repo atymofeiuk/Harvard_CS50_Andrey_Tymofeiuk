@@ -1,0 +1,76 @@
+<!--
+
+    CS50: Introduction to Computer Science (course by Harvard University, taken via edX.org)
+
+    PSet7: Survey
+
+    NB: PSet7/Survey files with Andrey Tymofeiuk's code are application.py, form.html and sheet.html,
+    other additional files contain distribution code provided by Harvard CS50 staff
+
+    @author: Andrey Tymofeiuk
+
+    Important: This code is placed at GitHub to track my progress in programming and
+    to show my way of thinking. Also I will be happy if somebody finds my solution
+    interesting. But I do respect The Honor Code and I ask you to respect it also - please
+    don't submit this solution to the CS50 grader and do not copy it.
+
+    (c) 2019
+
+-->
+
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+
+        <!-- Andrey Tymofeiuk: Written by me -->
+
+            <input autocomplete="off" name="name" placeholder="Name" type="text"><br>
+            <br>
+
+            <select name="house">
+                <option disabled selected value="">House</option>
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+                <option value="Slytherin">Slytherin</option>
+            </select><br>
+
+        <br>
+
+        <input type="radio" name="position" value="beater"> Beater<br>
+        <input type="radio" name="position" value="chaser"> Chaser<br>
+        <input type="radio" name="position" value="keeper"> Keeper<br>
+        <input type="radio" name="position" value="seeker"> Seeker<br>
+        <br>
+
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        /** Andrey Tymofeiuk: Written by me **/
+        document.querySelector('form').onsubmit = function(){
+            if (!document.querySelector('input[name=name]').value) {
+                alert('You must specify your name');
+                return false;
+            }
+            else if (!document.querySelector('select').value) {
+                alert('You must specify your house');
+                return false;
+            }
+            return true;
+        };
+
+
+    </script>
+
+{% endblock %}
